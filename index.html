@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>robot — Astra on LIBERO</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">ROBOT / VIDEO ARCHIVE</p>
+    <h1>Astra on LIBERO</h1>
+    <p>40 standard LIBERO episodes, one initial state per task. The simulator marked 28 successful and 12 unsuccessful. These are Astra rollouts, not Qwen or LIBERO Practice results.</p>
+  </header>
+  <main>
+    <div class="filters">
+      <label>Suite
+        <select id="suite"><option value="">All suites</option></select>
+      </label>
+      <label>Outcome
+        <select id="outcome">
+          <option value="">All outcomes</option>
+          <option value="success">Success</option>
+          <option value="failure">Failure</option>
+        </select>
+      </label>
+      <p id="count" aria-live="polite"></p>
+    </div>
+    <p id="error" role="alert" hidden>Could not load the video list. Please reload the page.</p>
+    <noscript>Enable JavaScript to browse the videos.</noscript>
+    <div id="gallery" class="gallery"></div>
+  </main>
+</body>
+</html>
